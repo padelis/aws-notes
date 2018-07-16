@@ -1,0 +1,41 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AWS Notes</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="//unpkg.com/docsify@4.7.0/themes/vue.css">
+  <style>
+  .sidebar > h1 a {
+      color: inherit;
+      text-decoration: underline;
+  }
+
+  .cover-main > p {
+
+  }
+
+</style>
+</head>
+<body>
+  <div id="app"/>
+
+  <script>
+  window.$docsify = {
+	coverpage: true,
+	loadNavbar: true,
+	el: '#app',
+	themeColor: '#000',
+	homepage: 'aws_notes.md',
+	loadSidebar: true,
+	basePath: '/docs/',
+	name: 'AWS Notes'
+}
+</script>
+
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+</body>
+</html><!-- index.html -->
