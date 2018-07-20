@@ -10,6 +10,8 @@ Apps have the storage when they need.
 - Can scale to petabytes
 - Data is stored across multiple AZ's within region
 - It is block base storage - not object base.
+- Can support thousands concurrent connections
+- Read After Write Consistency
 
 EC2 instances **must** be in the same security group with the EFS.
 
