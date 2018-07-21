@@ -1,7 +1,7 @@
 - Overview
-  - [10.000 feet](aws_notes.md)
+  - [10.000 Feet Overview](aws_notes.md)
 - Services
-  - [Identity & Access Management](IAM.md)
-  - [Simple Storage Service](S3.md)
-  - [Storage Gateway](Storage_Gateway.md)
-  - [CloudFront](CloudFront.md)
+  - [Storage](Storage_Summary.md)
+  - [EC2](EC2_Summary.md)
+  - [Route53](Route53.md)
+  - Databases

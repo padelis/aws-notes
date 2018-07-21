@@ -2,7 +2,7 @@
 
 ![logo](_media/logo.png)
 
-> AWS Solutions Architect Notes.
+> AWS Certified Solutions Architect Notes.
 
 <!-- - Simple and lightweight (~19kB gzipped)
 - No statically built html files
