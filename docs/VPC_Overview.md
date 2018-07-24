@@ -60,3 +60,15 @@ The first four IP addresses and the last IP address in each subnet CIDR block ar
 10.0.0.3: Reserved by AWS for future use.
 
 10.0.0.255: Network broadcast address. We do not support broadcast in a VPC, therefore we reserve this address.
+
+
+## VPC and ELB
+
+You need your application load balancers to always be at least **two** AZ. These AZs must be public.
+
+
+## VPC End Points
+
+Endpoint come in two different varieties:
+1. Interface Endpoint (Elastic Network Interface - A point of entry for your traffic)
+2. Gateway Endpoint (Highly Available to all the different services)
