@@ -1,14 +1,15 @@
-# AutoScaling
+# AutoScaling Groups
 
-# Placement groups
+# Placement Groups
 
 - Clustered Placement groups
   - Is a group of instances within a single availability zone.
-  - low latency and high traffic.
+  - Used when **low latency** is required.
+  - High traffic use cases.
 - Spread Placement groups
   - Each instance is placed on distinct underlying hardware
   - Separate from each other
 
 The names are unique.
-AWS recommends homogenous instances
-You can't merge them.
+AWS recommends homogenous instances.
+You **can't merge** groups.
