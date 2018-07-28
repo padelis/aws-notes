@@ -31,4 +31,10 @@
     - [NAT Instance & Gateways](NAT_Instances_&_Gateways.md)
     - [NAT vs Bastions](NAT_vs_Bastions.md)
     - [VPC Flow Logs](VPC_Flow_logs.md)
-  - Application Services  
+  - [Application Services](Application_Services_Summary.md)
+    - [Simple Queue Service](SQS.md)
+    - [Simple Workflow Service](SWF.md)
+    - [Simple Notification Service](SNS.md)
+    - [Elastic Transcoder](Elastic_Transcoder.md)
+    - [API Gateway](API_Gateway.md)
+    - [Kinesis](Kinesis.md)
