@@ -31,6 +31,7 @@ Three Classes:
 - Default is user friendly, allowing you to immediatly deploy instances
 - All subnets in default VPC have a route out to the internet
 - Each EC2 has both a public and a private IP.
+- New subnets within a custom VPC can communicate with each other, across AZ's
 
 ## VPC Peering
 
@@ -61,14 +62,13 @@ The first four IP addresses and the last IP address in each subnet CIDR block ar
 
 10.0.0.255: Network broadcast address. We do not support broadcast in a VPC, therefore we reserve this address.
 
-
 ## VPC and ELB
 
 You need your application load balancers to always be at least **two** AZ. These AZs must be public.
 
-
 ## VPC End Points
 
 Endpoint come in two different varieties:
-1. Interface Endpoint (Elastic Network Interface - A point of entry for your traffic)
-2. Gateway Endpoint (Highly Available to all the different services)
+
+1.  Interface Endpoint (Elastic Network Interface - A point of entry for your traffic)
+2.  Gateway Endpoint (Highly Available to all the different services)

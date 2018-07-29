@@ -60,6 +60,8 @@ Read Replicas allows you to have a read-only copy of your production db. This is
 
 ## Tips
 
+Maximum value of backup Retention is 35 days. Default is 1 day via the API and 7 days via console
+
 Elasticache is a good choice, if your database is read heavy and not prone to frequent changing.
 
 RedShift is a good choice if your database is stressed because of OLAP transactions

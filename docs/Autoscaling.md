@@ -3,7 +3,7 @@
 # Placement Groups
 
 - Clustered Placement groups
-  - Is a group of instances within a single availability zone.
+  - Is a group of instances **within a single availability zone**.
   - Used when **low latency** is required.
   - High traffic use cases.
 - Spread Placement groups
