@@ -1,6 +1,6 @@
 # AutoScaling Groups
 
-# Placement Groups
+## Placement Groups
 
 - Clustered Placement groups
   - Is a group of instances **within a single availability zone**.
@@ -11,5 +11,5 @@
   - Separate from each other
 
 The names are unique.
-AWS recommends homogenous instances.
-You **can't merge** groups.
+
+AWS recommends **homogenous instances**. You **can't merge** groups.

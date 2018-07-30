@@ -4,9 +4,8 @@
   - [AWS Cloud Best Practices](AWS_Cloud_Best_Practices.md)
   - [Well Architected Framework](Well_Architected_Framework.md)
 - Services
-
+  - [Identity & Access Management](IAM.md)
   - [Storage Summary](Storage_Summary.md)
-    - [Identity & Access Management](IAM.md)
     - [Simple Storage Service](S3.md)
     - [Storage Gateway](Storage_Gateway.md)
     - [CloudFront](CloudFront.md)

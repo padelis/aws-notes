@@ -1,34 +1,34 @@
 # Well Architected Framework
 
-General Design Principles
+## General Design Principles
 
-- Stop guessing your capacity needs
-- Test systems at production scale
-- Automate to make architectural experimentation easier
-- Allow for evolutionary architectures
-- Data-Driven architectures
-- Improve through game days
+- Stop guessing your capacity needs.
+- Test systems at production scale.
+- Automate to make architectural experimentation easier.
+- Allow for evolutionary architectures.
+- Data-Driven architectures.
+- Improve through game days.
 
 ## Security
 
 ### Design Principles
 
-- Apply security at all layers
-- Enable traceability
-- Automate responses to security events
-- Focus on securing your system
-- Automate security best practices (e.g OS Hardening)
+- Apply security at all layers.
+- Enable traceability.
+- Automate responses to security events.
+- Focus on securing your system.
+- Automate security best practices (e.g OS Hardening).
 
 ### AWS Shared Responsibility Model
 
 Customer are responsible for:
 
 - Their Data
-- Platforms, Apps, IAM Configuration
-- Operating System, Network & Firewall
-- Client-side Data Encryption & Data Integrity
-- Server-side Encryption
-- Network Traffic Protection
+- Platforms, Apps, IAM Configuration.
+- Operating System, Network & Firewall.
+- Client-side Data Encryption & Data Integrity.
+- Server-side Encryption.
+- Network Traffic Protection.
 
 AWS responsible for:
 
@@ -114,7 +114,7 @@ How to use computing resources efficiently to meet your requirements and how to 
 ### Definition & Best Practices
 
 - Compute
-  - Select the right type of server type (or no servers at all)
+  - Select the right type of server type (or no servers at all ;) )
 - Storage
   At AWS storage is virtualized. With s3 you can have 11x9's durability. With EBS you can choose different storage mediums (such as SSD, Magnetic, PIOPS etc).
   - Access Method (Block, file, or Object)

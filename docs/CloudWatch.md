@@ -1,12 +1,12 @@
 # CloudWatch
 
-Standar Monitor - 5 minutes
-Detailed Monitor - 1 minute
+- Standard Monitor - 5 minutes
+- Detailed Monitor - 1 minute
 
-Dashboards
-Alarms
-Event respond to state changes (e.g Lamba function)
-Logs aggregate monitor and store logs.
+1.  Dashboards (RAM Consumption is not included by default)
+2.  Alarms (Thresholds)
+3.  Event responds to State Changes (e.g Lambda Functions)
+4.  Aggregate, monitor and store logs.
 
-CloudWatch for monitoring
-CloudTrail for auditing
+CloudWatch is used for **Performance Monitoring**.
+CloudTrail is used for **Auditing**.

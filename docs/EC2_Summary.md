@@ -1,26 +1,28 @@
 # EC2 Summary & Tips
 
+For all new AWS accounts there is a soft limit of **20 instances per AWS region**.
+
 ## Pricing Groups:
 
-- On demand
-- Spot (If you terminate you pay)
-- Reserved (contracts)
+- On Demand Instances
+- Spot Instances (If you terminate them you pay)
+- Reserved Instances (Contracts)
 - Dedicated Hosts
 
-## EBS consists of:
+## Elastic Block Storage consists of:
 
-- SSD, GP2(10000 IOPS)
-- SSD Provisioned (More than 10000 IOPS)
-- HDD Throuput Optimized
-- HDD, Cold
-- HDD Magnetic
+- SSDs, GP2(**10000 IOPS**)
+- SSDs Provisioned (**More than 10000 IOPS**)
+- HDDs Throuput Optimized
+- HDDs Cold Storage
+- HDDs Magnetic
 
 You cannot mount 1 EBS volume to multiple instances.
 
-1.  Termination Protection is off by default
-2.  On a EBS-backed instance upon termination the default action is to delete the root EBS volume (**unless if instructed when creating**)
-3.  Root volumes can now be encrypted (Take snapshot and encrypt) via the AWS API or third party tools (bit locker)
-4.  Aditional Volumes can be encrypted.
+- Termination Protection is off by default
+- On a EBS-backed instance upon termination the default action is to delete the root EBS volume (**unless if instructed when creating**)
+- Root volumes can now be encrypted (Take snapshot and encrypt) via the AWS API or third party tools (bit locker)
+- Aditional Volumes can be encrypted.
 
 ## Volumes vs Snapshots
 
@@ -33,7 +35,7 @@ You cannot mount 1 EBS volume to multiple instances.
 
 - Snapshots are encrypted automatically
 - Volumes created from encrypted snapshots are encrypted.
-- Snapshot can be shared if they are unencrypted.
+- Snapshot can be **shared** if they are **unencrypted**.
 
 ## Snapshots of Root Device Volumes
 
@@ -42,12 +44,7 @@ ec2-create-snapshot
 ```
 
 - To create a snapshot of a root volume you have to stop the instance.
-
-Deleting a snapshot of an EBS Volume that is used as the root devices of a **registred** AMI.
-
-http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-deleting-snapshot.html
-
-You have to **deregister** the AMI first.
+- To [delete a snapshot of an EBS Volume that is used as the root device of a registred AMI](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-deleting-snapshot.html), you have to **deregister** the AMI first.
 
 ## EBS vs Instance store
 
@@ -55,7 +52,7 @@ You have to **deregister** the AMI first.
 - If the host fails you lose instance store data.
 - EBS can be stopped. You will not lose the data.
 - You can reboot **both**
-- Both will be deleted on termination. (you can keep ebs backed)
+- Both will be deleted on termination. (You can keep EBS backed)
 
 ## Take a snapshot of a RAID Array
 
@@ -67,23 +64,23 @@ You have to **deregister** the AMI first.
 
 ## Amazon Machine Images
 
-AMIs are regional.
-You can launch an AMI from the region it's stored. You can copy AMIs to other regions using console, command line or the Amazon EC2 API.
+- AMIs are regional.
+- You can launch an AMI from the region it's stored.
+- You can copy AMIs to other regions using console, command line or the Amazon EC2 API.
 
 ## Monitoring
 
-Standar Monitoring = 5 Minutes
-Deatiled Monitoring = 1 Minute
+Standard Monitoring = **5 Minutes**
+Detailed Monitoring = **1 Minute**
 
-CloudWatch is for **performance monitoring**.
-CloudTrail is for **auditing**.
+CloudWatch is used for **Performance Monitoring**.
+CloudTrail is used for **Auditing**.
 
 ### CloudWatch
 
 - Dashboards
-- Alarms (thresholds)
-- Events (respond in **state changes**)
-- Logs
+- Alarms (**Thresholds**)
+- Events (respond in **State Changes**)
 
 ## Roles
 
@@ -105,7 +102,7 @@ curl http://169.254.169.254/latest/meta-data
 curl http://169.254.169.254/latest/user-data
 ```
 
-## EFS
+## Elastic File System
 
 - Supports NFSv4
 - You only pay what you use.
@@ -121,12 +118,12 @@ A compute Service where you can upload your code and create a lambda function.
 
 Can be used in the following ways:
 
-1.  As an event driven compute service, where the code runs in response of events.
+1.  As an event driven compute service, where the code runs in **response of events**.
 
 - Changes to S3 Bucket.
-- Changes to DynamoDB table
+- Changes to a DynamoDB Table
 
-2.  As an event driven compute service, where the code runs in response of HTTP requests
+2.  As an event driven compute service, where the code runs in **response of HTTP requests**
 
 - Amazon API Gateway
 - AWS SDKs
@@ -134,7 +131,7 @@ Can be used in the following ways:
 ## Placement groups
 
 - Clustered Placement Group (one AZ - Big Data)
-  - Used for EC2 instances that require high network traffic and low latency across a single availability zone.
+  - Used for EC2 instances that require **high network traffic** and **low latency** across a single availability zone.
 - Spread Placement Group (Distinct Hardware)
 
 ## EBS Backed vs Instance Store

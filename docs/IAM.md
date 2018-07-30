@@ -1,9 +1,16 @@
-# IAM
+# Identity & Access Management
 
-1.  Users
-2.  Groups
-3.  Roles
-4.  Policies -> docs that define permissions. applied above
+- IAM is universal.
+- Root account has complete admin access.
+- New users have **no permissions by default**.
+- New users are assigned **Access Keys** and **Secret Access Keys**.
+- You have to create passwords for new users.
+- You can use Access Key and Secret Access Key to communicate wth AWS via console and SDKs.
+- You can create password rotation policies.
+
+## Groups
+
+A way to group users and roles and apply Polices.
 
 ## Roles
 
@@ -29,3 +36,23 @@ A call to STS federation actions returns:
 2.  Secret Access Key
 3.  Token
 4.  Expiration
+    Avoid storing credentials locally.
+
+## Policies
+
+Docs that define permissions in JSON. Key-Values Documents
+
+```
+{
+  "Version": 2018-10-17,
+  "Statement":
+  [
+    {
+      "Effect": "Allow",
+      "Action": "*",
+      "Resource": "*"
+    }
+  ]
+
+}
+```
