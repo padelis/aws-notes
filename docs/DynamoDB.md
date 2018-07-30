@@ -5,7 +5,7 @@ Amazon DynamoDB is a fast and flexible NOSQL database for applications that need
 It is fully managed and supports both document and key-value models.
 
 - Stored on SSD storage
-- Spread Across 3 geographically distinct data center.
+- Spread Across 3 geographically distinct data centers.
 - Eventual Consistency Reads
   - Consistency across all copies of data is usually reached within a second (Best Read Performance).
 - Strongly Consistent Reads

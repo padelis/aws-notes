@@ -10,7 +10,7 @@ Can be used to:
 ## Types
 
 - Memecached
-  - Elasticache is protocol compliant with Memcached.
+  - Elasticache is **protocol compliant** with Memcached.
 - Redis
   - Supports data structures (e.g sorted stes)
   - Elasticache supports Master/Slave Replication and Multi-AZ to achieve cross AZ redundancy

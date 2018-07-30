@@ -1,5 +1,7 @@
 # EC2 Summary & Tips
 
+For all new AWS accounts there is a soft limit of **20 instances per AWS region**.
+
 ## Pricing Groups:
 
 - On Demand Instances
