@@ -1,6 +1,6 @@
 # AWS Organizations
 
-AWS Organizations is an account managemnt service that enables you consolidate muliple accounts into an organization that you create and centrally manage.
+AWS Organizations is an account management service that enables you consolidate multiple accounts into an organization that you create and centrally manage.
 
 Available in two feature sets:
 
@@ -9,7 +9,7 @@ Available in two feature sets:
 
 ## Tips
 
-- 20 accounts default limit
+- **20 accounts** default limit
 - One bill per account
 - Very easy to track things
 - Volume pricing discount
@@ -26,5 +26,3 @@ Available in two feature sets:
 ## Cross Account Access
 
 You can login in the console with the IAM username, then switch the console to manage another account.
-
-Transitive Peering not supported

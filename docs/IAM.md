@@ -15,7 +15,6 @@ A way to group users and roles and apply Polices.
 ## Roles
 
 All roles are global.
-We dont have to store credentials locally.
 
 ## Security Token Service
 
@@ -30,13 +29,14 @@ Grants users limited and temporary access to AWS resources. User can from three 
 1.  Identity Store (Facebook)
 2.  Identity Broker (join Identity from point A to point B)
 
-A call to STS federation actions returns:
+A call to Security Token Service federation actions returns:
 
 1.  Access Key
 2.  Secret Access Key
 3.  Token
 4.  Expiration
-    Avoid storing credentials locally.
+
+_Avoid storing credentials locally_.
 
 ## Policies
 
