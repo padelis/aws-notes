@@ -72,3 +72,23 @@ Endpoint come in two different varieties:
 
 1.  Interface Endpoint (Elastic Network Interface - A point of entry for your traffic)
 2.  Gateway Endpoint (Highly Available to all the different services)
+
+## VPC peering
+
+A connection between two VPCs that enables you to route traffic between them, using private and public IPs
+
+- They have to be in **the same region**.
+- They can't have matching or overlaping CIDR blocks.
+- Transitive Peering not supported
+
+## Direct Connect
+
+A dedicated line from your premises to AWS.
+
+- Reduce costs when using large volumes of data
+- Increase reliability
+- Increase bandwidth
+
+VPN vs Direct connect.
+
+VPN is up in minutes and goes over the internet.

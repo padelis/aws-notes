@@ -8,6 +8,10 @@ Amazon Simple Workflow Service is a web service that makes easy to coordinate wo
 
 Task represent invocations of processing steps (application code, human actions) in an application
 
+## SWF Workflow Starters
+
+Initiate the workflows.
+
 ## SWF Workers
 
 Programs that interact with Amazon SWF to get tasks, process received tasks and return results

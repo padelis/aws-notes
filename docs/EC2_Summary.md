@@ -136,3 +136,10 @@ Can be used in the following ways:
 - Clustered Placement Group (one AZ - Big Data)
   - Used for EC2 instances that require high network traffic and low latency across a single availability zone.
 - Spread Placement Group (Distinct Hardware)
+
+## EBS Backed vs Instance Store
+
+- EBS backed volumes are persistent
+- Instance Store backed volumes are not persistent (ephemeral storage)
+- Instance store volume cannot be detached
+- Instance store cannot be stopped. (Data wiped)
