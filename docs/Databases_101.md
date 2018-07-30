@@ -2,7 +2,7 @@
 
 - Relational DBs (OLTP) available at AWS
 
-  - SQL Server
+  - SQL Server (Express 10/gb per database)
   - Oracle
   - MySQL
   - PostgreSQL

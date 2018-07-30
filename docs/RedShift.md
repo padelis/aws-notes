@@ -14,7 +14,7 @@ Redshift Configuration
 
 ## Columnar Data Storage
 
-Amazon Redshift organizes data by column (instead of series of rows). Column-based systems are ideal for data warehousing and analytics. Column-based system require far fewer I/Os, greatly improving query performance.
+Amazon Redshift organizes data by column (instead of series of rows). Column-based systems are ideal for data warehousing and analytics. Column-based system require far fewer I/Os, greatly improving query performance. **Blocksize is 1024KB**.
 
 ## Advanced Compression
 
