@@ -2,7 +2,7 @@
 
 - Relational DBs (OLTP) available at AWS
 
-  - SQL Server (Express 10/gb per database)
+  - SQL Server
   - Oracle
   - MySQL
   - PostgreSQL
@@ -64,4 +64,6 @@ Elasticache is a good choice, if your database is **read heavy** and not prone t
 
 RedShift is a good choice if your database is stressed because of **OLAP transactions**
 
-Maximum RDS Storage with Oracle and MySQL is 16TB (40000 IOPS).
+Maximum RDS Storage with Oracle and MySQL is **16TB (40000 IOPS)**.
+
+RDS Storage for SQL Express Server is **10/gb per database**.
