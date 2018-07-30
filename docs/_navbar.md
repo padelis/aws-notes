@@ -1,7 +1,12 @@
 - Overview
   - [10.000 Feet Overview](aws_notes.md)
+- Whitepapers
+  - [AWS Cloud Best Practices](AWS_Cloud_Best_Practices.md)
+  - [Well Architected Framework](Well_Architected_Framework.md)
 - Services
   - [Storage](Storage_Summary.md)
   - [EC2](EC2_Summary.md)
   - [Route53](Route53.md)
-  - Databases
+  - [Databases](Databases_101.md)
+  - [VPC Overview](VPC_Overview.md)
+  - [Application Services](Application_Services_Summary.md)
