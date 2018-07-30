@@ -1,14 +1,14 @@
 # Elastic File System
 
-Is a file storage service for EC2.
+Is a File Storage Service for EC2.
 Allows to create and configure file systems.
 Storage capacity is **elastic**.
 Apps have the storage when they need.
 
-- Supports NFSv4
+- Supports NFSv4.
 - You only pay what you use.
-- Can scale to petabytes
-- Data is stored across multiple AZ's within region
+- Can scale to petabytes.
+- Data is stored across **multiple AZ's within region**.
 - It is block base storage - not object base.
 - Can support thousands concurrent connections
 - Read After Write Consistency

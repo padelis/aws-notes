@@ -18,30 +18,30 @@ Lambda encapsulates:
 - Application Layer/ AWS APIs
 - AWS Lambda
 
-A compute Service where you can upload your code and create a lambda function.
+**A compute Service where you can upload your code and create a lambda function**.
 
 Can be used in the following ways:
 
-1.  As an event driven compute service, where the code runs in response of events.
+1.  As an event driven compute service, where the code runs in **response of events**.
 
 - Changes to S3 Bucket.
-- Changes to DynamoDB table
+- Changes to a DynamoDB Table
 
-2.  As an event driven compute service, where the code runs in response of HTTP requests
+2.  As an event driven compute service, where the code runs in **response of HTTP requests**
 
 - Amazon API Gateway
 - AWS SDKs
 
 ## Triggers
 
-- Api Gateway (resolution with arn amazon resource name)
+- Api Gateway (resolution with arn Amazon Resource Name)
 - AWS Iot
 - Alexa skill set
 - Alexa Smart Home
 - CloudWatch Events
 - CloudWatch Logs
 - CodeCommit
-- Cgnito Sync
+- Cognito Sync
 - DynamoDB
 - Kinesis
 - S3
@@ -58,7 +58,7 @@ Can be used in the following ways:
 ## Pricing
 
 - Number of requests (1m requests $0.20)
-- Duration price depends on the amount of memory allocated
+- Duration Price depends on the amount of Memory allocated
 
 ## So cool
 
@@ -71,6 +71,6 @@ Can be used in the following ways:
 - Scales **out** not up
 - 1 event = 1 function
 - Multiple Lambda functions can be triggered from one event
-- AWS X-ray allows you to debug
-- Can do things globally (backup s3 buckets)
-- Maximum execution time is 5 minutes
+- **AWS X-ray** allows debugging
+- Can do things globally (e.g Backup s3 Buckets)
+- Maximum execution time is **5 minutes.**

@@ -1,35 +1,28 @@
 # Elastic Load Balancers
 
-Application Load Balancers
+## Application Load Balancers
 
-- best suited for HTTP/HTTPS
-- Operate at layer 7
+- Best suited for HTTP/HTTPS
+- Operate at Layer 7
 - advanced routing requests
 
-Network Load Balancers
+## Network Load Balancers
 
-- best suited for TCP
-- Operate at layer 4
-- millions request - low latency
+- Best suited for TCP
+- Operate at Layer 4
+- Millions request - **Low Latency**
 
-Classic Load Balancers
+## Classic Load Balancers
 
-- best suited for HTTP/HTTPS & TCP
+- Best suited for HTTP/HTTPS & TCP
 - Operate at layer 4 and 7
-- sticky sessions
+- Sticky sessions
 
-504 is gateway timeout the application is not working?
+## ELB Facts
 
-X-Forwarded-For headers (public ip)
-where the users are coming from
+- 504 HTTP Response Code is a Gateway Timeout (The application is not working for sure).
+- X-Forwarded-For headers contain users Public IPs
+- Point a Domain Name to Load Balancer's DNS name and put E2C instances behind it.
+- Instances monitored are **InService** or **OutofService**
 
-Point a domain name to load Balancer's DNS name and put E2C instances behind it.
-
-Instances monitored are
-
-- InService
-- OutofService
-
-Only DNS names NO IP address
-
-ELB FAQ Must read.
+[Elastic Load Balancers FAQs here.](https://aws.amazon.com/elasticloadbalancing/faqs/)
