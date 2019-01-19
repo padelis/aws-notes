@@ -26,3 +26,10 @@
 - Instances monitored are **InService** or **OutofService**
 
 [Elastic Load Balancers FAQs here.](https://aws.amazon.com/elasticloadbalancing/faqs/)
+
+## ELB Monitoring
+
+- CloudWatch Metrics
+- Access Logs (Disabled by default)
+- Request Tracing (**Only for ALB**)
+- CloudTrail Logs

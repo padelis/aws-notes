@@ -9,9 +9,13 @@ Can be used to:
 
 ## Types
 
-- Memecached
+- Memcached
+  - Multi-threaded
+  - Loads up to 90%. If more add more nodes
   - Elasticache is **protocol compliant** with Memcached.
 - Redis
+  - Not Multi-threaded.
+  - Threshold for scale 90% / NoCores CPU Utilization.
   - Supports data structures (e.g sorted stes)
   - Elasticache supports Master/Slave Replication and Multi-AZ to achieve cross AZ redundancy
 
@@ -19,6 +23,21 @@ Can be used to:
 
 ## Tips
 
-Elasticache is a good choice, if your database is read heavy and not prone to frequent changing.
+Elasticache is a good choice, if your database is read heavy and not prone to frequent changing.  
+RedShift is a good choice if your database is stressed because of OLAP transactions  
 
-RedShift is a good choice if your database is stressed because of OLAP transactions
+
+## Elasticache Metrics and Actions
+
+- CPU Utilization
+  - Memcached
+- Swap Usage
+  - Memcached: if exceed 50Mb increase the **memcahed_connection_overhead** parameter.
+- Evictions
+  - Memcached
+    - Scale UP (More RAM)
+    - Scale OUT (More Instances)
+  - Redis
+    - Scale OUT
+- Concurrent Connections
+  - Create an alarm
