@@ -1,5 +1,8 @@
 - Overview
   - [10.000 Feet Overview](aws_notes.md)
+  - [AI/ML Services](AI_ML_Services.md)
+  - [Quantum Computing](Quantum_Computing.md)
+  - [Sustainability Services](Sustainability_Services.md)
 - Whitepapers
   - [AWS Cloud Best Practices](AWS_Cloud_Best_Practices.md)
   - [Well Architected Framework](Well_Architected_Framework.md)
